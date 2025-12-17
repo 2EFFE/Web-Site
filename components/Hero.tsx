@@ -148,28 +148,6 @@ const Hero: React.FC<HeroProps> = ({ lang, translations }) => {
             </motion.div>
           </div>
         </div>
-
-        {/* Scroll Indicator - Posizione aggiornata */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 1 }}
-          className="absolute bottom-24 left-1/2 -translate-x-1/2 cursor-pointer flex flex-col items-center gap-3"
-          onClick={(e) => handleScroll(e as any, "#experience")}
-        >
-          <motion.span 
-            animate={{ opacity: [0.3, 1, 0.3] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="text-[10px] font-black tracking-[0.4em] uppercase text-gray-400 dark:text-blue-400/60"
-          >
-            Discover More
-          </motion.span>
-          <motion.div 
-            animate={{ scaleY: [1, 1.5, 1], originY: 0 }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-[2px] h-12 bg-gradient-to-b from-blue-500 to-transparent rounded-full" 
-          />
-        </motion.div>
       </div>
     </section>
   );

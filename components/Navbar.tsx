@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Home, User, Briefcase, GraduationCap, Mail, Languages, FolderKanban } from 'lucide-react';
+import { Home, User, Briefcase, GraduationCap, Mail, Languages, FolderKanban, Box } from 'lucide-react';
 import { Language } from '../App';
 
 interface NavbarProps {
@@ -16,6 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, toggleLanguage, translations }) =
     { icon: Briefcase, href: "#experience", label: translations.experience },
     { icon: GraduationCap, href: "#education", label: translations.education },
     { icon: User, href: "#skills", label: translations.skills },
+    { icon: Box, href: "#mekai", label: translations.mekai },
     { icon: FolderKanban, href: "#projects", label: translations.projects },
     { icon: Mail, href: "#contact", label: translations.contact },
   ];

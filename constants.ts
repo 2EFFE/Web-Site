@@ -43,7 +43,9 @@ import {
   Box,
   Fingerprint,
   ClipboardCheck,
-  Play
+  Play,
+  ExternalLink,
+  Hammer
 } from 'lucide-react';
 
 export const I18N = {
@@ -53,16 +55,35 @@ export const I18N = {
       experience: "Esperienza",
       education: "Formazione",
       skills: "Skills",
+      mekai: "Mekai",
       projects: "Progetti",
       contact: "Contatti"
     },
     hero: {
       badge: "Ingegnere Meccatronico",
-      tagline: "Progetto l'intersezione tra bit e atomi.",
+      tagline: "Il mio laboratorio digitale: dove l'ingegneria incontra l'innovazione.",
       cta_primary: "Iniziamo un progetto",
       cta_secondary: "Esperienze",
       cta_cv: "Scarica CV",
-      words: ["Ingegnere Meccatronico", "Sviluppatore iOS", "Automation Expert", "Industrial Designer", "Problem Solver"]
+      words: [
+        "Mechatronics Engineer",
+        "iOS App Developer",
+        "Embedded & Robotics Developer",
+        "Automation-Oriented Engineer",
+        "Product & System Designer"
+      ]
+    },
+    mekai: {
+      title: "Mekai: Artigianato Digitale",
+      subtitle: "Il mio laboratorio di prototipazione dove il design incontra la realtà fisica.",
+      description: "Mekai è la mia iniziativa imprenditoriale e creativa che unisce stampa 3D FDM/SLA e sviluppo software. Qui trasformo concetti digitali in oggetti tangibili, offrendo soluzioni personalizzate che spaziano dal design d'interni alla prototipazione tecnica industriale.",
+      vision: "La mia visione con Mekai è democratizzare l'ingegneria di precisione attraverso la manifattura additiva.",
+      features: [
+        { icon: "Box", title: "Prototipazione 3D", desc: "Sviluppo rapido di parti meccaniche e prototipi funzionali in vari polimeri." },
+        { icon: "Zap", title: "Soluzioni Digitali", desc: "Integrazione di piattaforme web per la gestione e personalizzazione degli ordini." },
+        { icon: "Hammer", title: "Design Custom", desc: "Dalla modellazione CAD alla post-produzione per pezzi unici e serie limitate." }
+      ],
+      cta: "Visita mekai.vercel.app"
     },
     cv: {
       objective: "Il mio obiettivo è applicare le mie conoscenze ed esperienze in ingegneria informatica, meccanica ed elettrica per progettare e sviluppare soluzioni innovative. Sono sempre alla ricerca di opportunità di crescita e ruoli stimolanti.",
@@ -78,6 +99,11 @@ export const I18N = {
     projects: {
       title: "Case Studies",
       subtitle: "Analisi tecnica di soluzioni reali tra ingegneria e software.",
+      viewMore: "Dettagli tecnici",
+      close: "Chiudi",
+      problemLabel: "Problema",
+      solutionLabel: "Soluzione",
+      resultsLabel: "Risultati",
       items: [
         {
           id: "novartis-automation",
@@ -85,14 +111,34 @@ export const I18N = {
           category: "Automazione Industriale",
           tech: ["GMP", "SAP", "Audit Trail"],
           icon: "Briefcase",
-          problem: "Necessità di garantire l'integrità dei dati e la compliance regolatoria.",
-          solution: "Implementazione di protocolli di qualifica IQ/OQ/PQ.",
-          results: "Compliance 100% durante gli audit."
+          problem: "Necessità di garantire l'integrità dei dati e la compliance regolatoria in un ambiente di produzione farmaceutica.",
+          solution: "Implementazione di protocolli di qualifica IQ/OQ/PQ e ottimizzazione dell'Audit Trail per sistemi critici.",
+          results: "Compliance 100% raggiunta durante gli audit regolatori interni ed esterni."
+        },
+        {
+          id: "ios-iot-dashboard",
+          title: "Industrial IoT Dashboard",
+          category: "iOS Development / IoT",
+          tech: ["SwiftUI", "MQTT", "Node-RED"],
+          icon: "Smartphone",
+          problem: "Difficoltà nel monitoraggio mobile dei sensori di impianto in tempo reale senza dipendere da PC industriali fissi.",
+          solution: "Sviluppo di un'app nativa iOS che comunica via MQTT con i gateway di fabbrica, visualizzando grafici dinamici e alert.",
+          results: "Riduzione del 30% dei tempi di intervento tecnico grazie alle notifiche push istantanee sui parametri fuori soglia."
+        },
+        {
+          id: "autonomous-robot",
+          title: "Controllo AMR Prototipale",
+          category: "Robotica & Sistemi di Controllo",
+          tech: ["C++", "PID Control", "Sensori Ultrasuoni"],
+          icon: "Bot",
+          problem: "Instabilità nel movimento e nella navigazione di un prototipo di robot mobile autonomo durante l'evitamento ostacoli.",
+          solution: "Progettazione e tuning di un controllore PID per i motori DC e implementazione di algoritmi di pathfinding basati su logica fuzzy.",
+          results: "Precisione nel posizionamento migliorata del 40% e navigazione fluida in ambienti non strutturati."
         }
       ]
     },
     experience: {
-      title: "Esperienze Professionali",
+      title: "Esperienze Professionale",
       subtitle: "Un percorso tra automazione industriale, analisi dati e robotica.",
       items: [
         {
@@ -193,16 +239,35 @@ export const I18N = {
       experience: "Experience",
       education: "Education",
       skills: "Skills",
+      mekai: "Mekai",
       projects: "Projects",
       contact: "Contact"
     },
     hero: {
       badge: "Mechatronic Engineer",
-      tagline: "Designing at the intersection of bits and atoms.",
+      tagline: "My digital laboratory: where engineering meets innovation.",
       cta_primary: "Let's start a project",
       cta_secondary: "Experience",
       cta_cv: "Download CV",
-      words: ["Mechatronic Engineer", "iOS Developer", "Automation Expert", "Industrial Designer", "Problem Solver"]
+      words: [
+        "Mechatronics Engineer",
+        "iOS App Developer",
+        "Embedded & Robotics Developer",
+        "Automation-Oriented Engineer",
+        "Product & System Designer"
+      ]
+    },
+    mekai: {
+      title: "Mekai: Digital Craftsmanship",
+      subtitle: "My prototyping lab where design meets physical reality.",
+      description: "Mekai is my entrepreneurial and creative initiative bridging FDM/SLA 3D printing and software development. Here, I transform digital concepts into tangible objects, offering custom solutions ranging from interior design to industrial technical prototyping.",
+      vision: "My vision with Mekai is to democratize precision engineering through additive manufacturing.",
+      features: [
+        { icon: "Box", title: "3D Prototyping", desc: "Rapid development of mechanical parts and functional prototypes in various polymers." },
+        { icon: "Zap", title: "Digital Solutions", desc: "Integration of web platforms for order management and customization." },
+        { icon: "Hammer", title: "Custom Design", desc: "From CAD modeling to post-production for unique pieces and limited series." }
+      ],
+      cta: "Visit mekai.vercel.app"
     },
     cv: {
       objective: "My goal is to apply my knowledge and experience in computer, mechanical and electrical engineering to design and develop innovative solutions.",
@@ -218,6 +283,11 @@ export const I18N = {
     projects: {
       title: "Case Studies",
       subtitle: "Technical analysis of real-world solutions across engineering and software.",
+      viewMore: "Technical Details",
+      close: "Close",
+      problemLabel: "Problem",
+      solutionLabel: "Solution",
+      resultsLabel: "Results",
       items: [
         {
           id: "novartis-automation",
@@ -225,9 +295,29 @@ export const I18N = {
           category: "Industrial Automation",
           tech: ["GMP", "SAP", "Audit Trail"],
           icon: "Briefcase",
-          problem: "Regulatory compliance needs.",
-          solution: "Qualification protocols implementation.",
-          results: "100% compliance during audits."
+          problem: "Regulatory compliance and data integrity needs in a pharmaceutical production setting.",
+          solution: "Implementation of qualification protocols (IQ/OQ/PQ) and Audit Trail optimization.",
+          results: "100% compliance during internal and external regulatory audits."
+        },
+        {
+          id: "ios-iot-dashboard",
+          title: "Industrial IoT Dashboard",
+          category: "iOS Development / IoT",
+          tech: ["SwiftUI", "MQTT", "Node-RED"],
+          icon: "Smartphone",
+          problem: "Lack of mobile access to real-time plant sensor data.",
+          solution: "Developed a native iOS app that communicates with factory gateways via MQTT, featuring dynamic charts.",
+          results: "30% reduction in technical response time due to instant push notifications on threshold breaches."
+        },
+        {
+          id: "autonomous-robot",
+          title: "AMR Prototype Control",
+          category: "Robotics & Control Systems",
+          tech: ["C++", "PID Control", "Ultrasonic Sensors"],
+          icon: "Bot",
+          problem: "Instability in autonomous navigation and obstacle avoidance for a mobile robot prototype.",
+          solution: "Design and tuning of a PID controller for DC motors and implementation of fuzzy-logic-based pathfinding.",
+          results: "40% improvement in positioning accuracy and smoother navigation in unstructured environments."
         }
       ]
     },
@@ -392,5 +482,7 @@ export const ICONS = {
   Box,
   Fingerprint,
   ClipboardCheck,
-  Play
+  Play,
+  ExternalLink,
+  Hammer
 };

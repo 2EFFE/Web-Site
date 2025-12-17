@@ -7,6 +7,7 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import MekaiSection from './components/MekaiSection';
 import ScrollProgress from './components/ScrollProgress';
 import Background from './components/Background';
 import BackToTop from './components/BackToTop';
@@ -39,6 +40,9 @@ const App: React.FC = () => {
           <Experience lang={lang} translations={t.experience} />
           <Education lang={lang} translations={t.education} />
           <Skills lang={lang} translations={t.skills} />
+          
+          {/* Nuova sezione Mekai inserita prima dei progetti */}
+          <MekaiSection lang={lang} translations={t.mekai} />
           
           <Projects lang={lang} translations={t.projects} />
           <Contact lang={lang} translations={t.contact} />
