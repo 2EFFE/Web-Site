@@ -61,7 +61,7 @@ export const I18N = {
     },
     hero: {
       badge: "Ingegnere Meccatronico",
-      tagline: "Starting from bottom to fly very high.",
+      tagline: "Il mio laboratorio digitale: dove l'ingegneria incontra l'innovazione.",
       cta_primary: "Iniziamo un progetto",
       cta_secondary: "Esperienze",
       cta_cv: "Scarica CV",
