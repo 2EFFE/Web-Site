@@ -399,7 +399,7 @@ export const I18N = {
       title: "Let's work together.",
       subtitle: "Interested in collaborating? Choose the option that best fits your needs.",
       qr_title: "Save my Contact",
-      qr_subtitle: "Scan to save my details directly into your address book.",
+      qr_subtitle: "Scan to save my details directly into your address book!",
       form: {
         name: "Name",
         email: "Email",
