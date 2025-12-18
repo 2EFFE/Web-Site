@@ -61,7 +61,7 @@ export const I18N = {
     },
     hero: {
       badge: "Ingegnere Meccatronico",
-      tagline: "Il mio laboratorio digitale: dove l'ingegneria incontra l'innovazione.",
+      tagline: "Starting from bottom to fly very high.",
       cta_primary: "Iniziamo un progetto",
       cta_secondary: "Esperienze",
       cta_cv: "Scarica CV",
@@ -74,7 +74,7 @@ export const I18N = {
       ]
     },
     mekai: {
-      title: "Mekai: Artigianato Digitale",
+      title: "Mekai: Laboratorio Digitale",
       subtitle: "Il mio laboratorio di prototipazione dove il design incontra la realtà fisica.",
       description: "Mekai è la mia iniziativa imprenditoriale e creativa che unisce stampa 3D FDM/SLA e sviluppo software. Qui trasformo concetti digitali in oggetti tangibili, offrendo soluzioni personalizzate che spaziano dal design d'interni alla prototipazione tecnica industriale.",
       vision: "La mia visione con Mekai è democratizzare l'ingegneria di precisione attraverso la manifattura additiva.",
