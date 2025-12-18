@@ -61,7 +61,7 @@ export const I18N = {
     },
     hero: {
       badge: "Ingegnere Meccatronico",
-      tagline: "Benvenuti nel mio laboratorio digitale: dove l'ingegneria incontra l'innovazione.",
+      tagline: "Il mio laboratorio digitale: dove l'ingegneria incontra l'innovazione.",
       cta_primary: "Iniziamo un progetto",
       cta_secondary: "Esperienze",
       cta_cv: "Scarica CV",
@@ -74,7 +74,7 @@ export const I18N = {
       ]
     },
     mekai: {
-      title: "Mekai: Artigianato Digitale",
+      title: "Mekai: Laboratorio Digitale",
       subtitle: "Il mio laboratorio di prototipazione dove il design incontra la realtà fisica.",
       description: "Mekai è la mia iniziativa imprenditoriale e creativa che unisce stampa 3D FDM/SLA e sviluppo software. Qui trasformo concetti digitali in oggetti tangibili, offrendo soluzioni personalizzate che spaziano dal design d'interni alla prototipazione tecnica industriale.",
       vision: "La mia visione con Mekai è democratizzare l'ingegneria di precisione attraverso la manifattura additiva.",
@@ -245,7 +245,7 @@ export const I18N = {
     },
     hero: {
       badge: "Mechatronic Engineer",
-      tagline: "Welcome to my digital laboratory: where engineering meets innovation.",
+      tagline: "My digital laboratory: where engineering meets innovation.",
       cta_primary: "Let's start a project",
       cta_secondary: "Experience",
       cta_cv: "Download CV",
@@ -258,7 +258,7 @@ export const I18N = {
       ]
     },
     mekai: {
-      title: "Mekai: Digital Craftsmanship",
+      title: "Mekai: Digital Laboratory",
       subtitle: "My prototyping lab where design meets physical reality.",
       description: "Mekai is my entrepreneurial and creative initiative bridging FDM/SLA 3D printing and software development. Here, I transform digital concepts into tangible objects, offering custom solutions ranging from interior design to industrial technical prototyping.",
       vision: "My vision with Mekai is to democratize precision engineering through additive manufacturing.",
